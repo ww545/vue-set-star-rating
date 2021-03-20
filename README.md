@@ -56,6 +56,7 @@ npm i vue-stars-rating -S  OR yarn vue-stars-rating
 
 ```
     methods: {
+     let num =Math.round((e.layerX/starWidth).toString().split(".")[1] / 10);
       itemclick(num) {       
         this.$set(this.config,"rating", num); 
       }
